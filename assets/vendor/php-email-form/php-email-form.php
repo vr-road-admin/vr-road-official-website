@@ -57,7 +57,7 @@ class PHP_Email_Form {
                 $mail->Port       = 587; // **UPDATED FOR SENDGRID: Port is 587 for TLS**
 
                 // Debug output (optional, uncomment for troubleshooting)
-                $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Keeping debug on for now
+                // $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Keeping debug on for now
             } else {
                 // If no SMTP settings, try to send via local mail() function (less reliable)
                 $mail->isMail();
