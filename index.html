@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- API KEY FOR WEBSITE EMAILS     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     -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -551,7 +551,7 @@
     <section id="subscribe" class="subscribe section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-between align-items-center">
-          
+
           <!-- Text and Form -->
           <div class="col-lg-6">
             <div class="cta-content" data-aos="fade-up" data-aos-delay="200">
@@ -559,12 +559,12 @@
               <p>Get updates on simulator releases, VR driving events, training tips, and more. Subscribe and be part of the next generation in driver education.</p>
               <form action="forms/newsletter.php" method="post" class="php-email-form cta-form" data-aos="fade-up" data-aos-delay="300">
                 <div class="input-group mb-3">
-                  <input type="email" class="form-control" placeholder="Email address..." aria-label="Email address" aria-describedby="button-subscribe" required>
+                  <input type="email" name="email" class="form-control" placeholder="Email address..." aria-label="Email address" aria-describedby="button-subscribe" required>
                   <button class="btn btn-primary" type="submit" id="button-subscribe">Subscribe</button>
                 </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+                <div class="loading" style="display:none;">Loading</div>
+                <div class="error-message" style="display:none;"></div>
+                <div class="sent-message" style="display:none;">Your subscription request has been sent. Thank you!</div>
               </form>
             </div>
           </div>
@@ -579,6 +579,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- /Subscribe Section -->
 
@@ -679,15 +680,19 @@
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+              <div class="newsletter-form">
+                <input type="email" name="email" placeholder="Email address..." required>
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading" style="display:none;">Loading</div>
+              <div class="error-message" style="display:none;"></div>
+              <div class="sent-message" style="display:none;">Your subscription request has been sent. Thank you!</div>
             </form>
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="container footer-top">
       <div class="row gy-4">
